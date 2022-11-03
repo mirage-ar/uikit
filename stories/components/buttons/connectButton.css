@@ -1,0 +1,44 @@
+.button {
+    width: 153px;
+    height: 45px;
+    border-radius: 30px;
+    padding: 15px, 20px;
+    gap: 10px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--mono);
+    font-size: 13px;
+}
+
+.button--primary {
+    background-color: white;
+    color: black;
+}
+
+.button--primary:hover {
+    background-color: var(--green);
+}
+
+.button--secondary {
+    background-color: transparent;
+    color: white;
+    border: 1.5px solid white;
+}
+
+.button--secondary:hover {
+    background-color: transparent;
+    color: var(--green);
+    border: 1.5px solid var(--green);
+}
+
+.--loading {
+    background-color: var(--green);
+    border: none;
+}
+
+.--loading img {
+    width: 24px;
+}
