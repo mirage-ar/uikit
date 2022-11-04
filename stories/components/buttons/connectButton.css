@@ -11,6 +11,7 @@
     align-items: center;
     font-family: var(--mono);
     font-size: 13px;
+    cursor: pointer;
 }
 
 .button--primary {
@@ -42,3 +43,11 @@
 .--loading img {
     width: 24px;
 }
+
+.--disabled {
+    opacity: 0.3;
+}
+
+/* .--disabled:hover {
+    pointer-events: none;
+}  */
