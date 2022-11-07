@@ -1,25 +1,25 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { ConnectButton } from "./ConnectButton";
+import Button from "./Button";
 
 export default {
   title: "Button",
-  component: ConnectButton,
-} as ComponentMeta<typeof ConnectButton>;
+  component: Button,
+} as ComponentMeta<typeof Button>;
 
-const Template: ComponentStory<typeof ConnectButton> = (args) => (
-  <ConnectButton {...args} />
+const Template: ComponentStory<typeof Button> = (args) => (
+  <Button {...args} />
 );
 
 export const Primary = Template.bind({});
 Primary.args = {
   primary: true,
-  label: "CONNECT WALLET",
+  children: "CONNECT WALLET",
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
   primary: false,
-  label: 'CONNECT WALLET',
+  children: 'CONNECT WALLET',
 };
