@@ -1,7 +1,7 @@
 /**----------------------------------------------------------------------------------
  * The one stop shop for button needs baby
  * Mirage UI Kit (( v1.0 ))
- * @author max <max@mirage.space> | November 3, 2022 | Updated: nevah
+ * @author max <max@mirage.space> | November 3, 2022 | Updated: November 7, 2022
  * ----------------------------------------------------------------------------------*/
 
 import React from "react";
@@ -16,7 +16,7 @@ interface ButtonProps {
   onClick: () => void;
 }
 
-const ConnectButton: React.FC<ButtonProps> = ({
+const Button: React.FC<ButtonProps> = ({
   primary = true,
   size = "large",
   loading = false,
@@ -27,11 +27,11 @@ const ConnectButton: React.FC<ButtonProps> = ({
   // join all button classes based on props
   const buttonClass = [
     styles.button,
-    `button--${size}`,
-    primary ? styles["button--primary"] : styles["button--secondary"],
+    styles[`--${size}`],
+    primary ? styles["--primary"] : styles["--secondary"],
     loading ? styles["--loading"] : "",
-    disabled ? "--disabled" : "",
-    size == "small" ? styles["small__loader"] : "",
+    disabled ? styles["--disabled"] : "",
+    size == "small" ? styles["--small__loader"] : "",
   ].join(" ");
 
   return (
@@ -41,4 +41,4 @@ const ConnectButton: React.FC<ButtonProps> = ({
   );
 };
 
-export default ConnectButton;
+export default Button;
