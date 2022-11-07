@@ -8,10 +8,10 @@ import React from "react";
 import "./connectButton.css";
 
 interface ConnectButtonProps {
-  primary: boolean;
-  enabled: boolean;
-  loading: boolean;
-  size: "large" | "small";
+  primary?: boolean;
+  disabled?: boolean;
+  loading?: boolean;
+  size?: "large" | "small";
   label: string;
 }
 
@@ -20,19 +20,23 @@ export const ConnectButton = ({
   primary = true,
   size = "large",
   loading = false,
-  enabled = true,
+  disabled = true,
 }: ConnectButtonProps) => {
-  const mode = primary ? "button--primary" : "button--secondary";
+  const mode = primary ? "--primary" : "--secondary";
   const isLoading = loading ? "--loading" : "";
-  const isEnabled = !enabled ? "--disabled" : "";
-
+  const isDisabled = disabled ? "--disabled" : "";
+  const smallLoader = loading && size === "small" ? "--small__loader" : "";
+  
   return (
-    <button
-      className={["button", `button--${size}`, mode, isLoading, isEnabled].join(
+    <button 
+      disabled={disabled}
+      //TODO: Why do we need the " " at the end of the join, want to remove the white space in the css
+      //inspector names so they read button--primar--large instead of button --primary --large
+      className={["button", mode, `--${size}`, isLoading, smallLoader, isDisabled].join(
         " "
       )}
     >
-      {isLoading ? <img src={"/gifs/spinner.gif"} /> : label}
+      {isLoading ? <img src="/gifs/spinner.gif"/> : label}
     </button>
   );
 };
