@@ -31,13 +31,11 @@ const ConnectButton: React.FC<ButtonProps> = ({
     primary ? styles["button--primary"] : styles["button--secondary"],
     loading ? styles["--loading"] : "",
     disabled ? "--disabled" : "",
+    size == "small" ? styles["small__loader"] : "",
   ].join(" ");
 
   return (
-    <button
-      className={buttonClass}
-      onClick={onClick}
-    >
+    <button className={buttonClass} onClick={onClick}>
       {loading ? <img src={"/gifs/spinner.gif"} /> : children}
     </button>
   );
