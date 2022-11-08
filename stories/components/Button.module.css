@@ -1,62 +1,91 @@
 .button {
-    border-radius: 30px;
-    padding: 15px, 20px;
-    gap: 10px;
-    border: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-family: var(--mono);
+  border-radius: 30px;
+  padding: 15px, 20px;
+  gap: 10px;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--mono);
 }
 
 .--large {
-    width: 153px;
-    height: 45px;
-    font-size: 13px;
+  width: 153px;
+  height: 45px;
+  font-size: 13px;
 }
 
 .--small {
-    width: 136px;
-    height: 32px;
-    font-size: 11px;
+  width: 136px;
+  height: 32px;
+  font-size: 11px;
 }
 
 .--primary {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 .--primary:hover {
-    background-color: var(--green);
+  background-color: var(--green);
 }
 
 .--secondary {
-    background-color: transparent;
-    color: white;
-    border: 1.5px solid white;
+  background-color: transparent;
+  color: white;
+  border: 1.5px solid white;
 }
 
 .--secondary:hover {
-    background-color: transparent;
-    color: var(--green);
-    border: 1.5px solid var(--green);
+  background-color: transparent;
+  color: var(--green);
+  border: 1.5px solid var(--green);
 }
 
 .--loading {
-    background-color: var(--green);
-    border: none;
+  background-color: var(--green);
+  border: none;
 }
 
 .--loading img {
-    width: 24px;
+  width: 24px;
 }
 
 .--disabled {
-    opacity: 0.3;
-    pointer-events: none;
+  opacity: 0.3;
+  pointer-events: none;
 }
 
 .--small__loader img {
-    width: 16px;
+  width: 16px;
+}
+
+.--with__image {
+  width: 187px;
+  padding: 11px, 20px, 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.--with__image img {
+  width: 24px;
+  height: 24px;
+}
+
+.--with__image__small {
+  width: 158px;
+  height: 32px;
+  padding: 8px, 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.--with__image__small img {
+  width: 16px;
+  height: 16px;
 }
