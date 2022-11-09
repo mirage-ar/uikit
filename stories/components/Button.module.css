@@ -59,9 +59,10 @@
 
 .--small__loader img {
   width: 16px;
+  height: 16px;
 }
 
-.--with__image {
+.--with__icon {
   width: 187px;
   padding: 11px, 20px, 10px;
   display: flex;
@@ -70,12 +71,12 @@
   justify-content: center;
 }
 
-.--with__image img {
+.--with__icon img {
   width: 24px;
   height: 24px;
 }
 
-.--with__image__small {
+.--with__icon__small {
   width: 158px;
   height: 32px;
   padding: 8px, 20px;
@@ -85,7 +86,7 @@
   align-items: center;
 }
 
-.--with__image__small img {
+.--with__icon__small img {
   width: 16px;
   height: 16px;
 }

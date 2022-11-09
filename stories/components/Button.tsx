@@ -5,44 +5,63 @@
  * ----------------------------------------------------------------------------------*/
 
 import React from "react";
-import Image from 'next/image'
+import Image from "next/image";
+
 import styles from "./Button.module.css";
 
 interface ButtonProps {
-  primary?: boolean;
+  secondary?: boolean;
   disabled?: boolean;
   loading?: boolean;
-  size?: "large" | "small";
+  small? : boolean;
   children: string;
-  image?: string;
+  icon?: string;
   onClick: () => void;
 }
 
 const Button: React.FC<ButtonProps> = ({
-  primary = true,
-  size = "large",
+  secondary = false,
+  small = false,
   loading = false,
   disabled = false,
-  image,
+  icon,
   children,
   onClick,
 }) => {
   // join all button classes based on props
   const buttonClass = [
     styles.button,
-    styles[`--${size}`],
-    primary ? styles["--primary"] : styles["--secondary"],
-    loading ? styles["--loading"] : "",
-    disabled ? styles["--disabled"] : "",
-    size == "small" ? styles["--small__loader"] : "",
-    size == "small" ? styles["--with__image__small"] : "",
-    image ? styles["--with__image"] : "",
+    small ? styles["--small"] : styles ["--large"],
+    secondary ? styles["--secondary"] : styles["--primary"],
+    loading && styles["--loading"],
+    disabled && styles["--disabled"],
+    loading && small && styles["--small__loader"],
+    icon && small && styles["--with__icon__small"],
+    icon && styles["--with__icon"],
   ].join(" ");
 
   return (
     <button className={buttonClass} onClick={onClick}>
-      {loading ? <Image src="/gifs/spinner.gif" alt="A loading gif" width={26} height={26} quality={100} /> : children}
-      {image ? <Image src={`${image}`} alt="An image" width={26} height={26} quality={100}/> : ""}
+      {loading ? (
+        <Image
+          src="/gifs/spinner.gif"
+          alt="A loading gif"
+          width={26}
+          height={26}
+          quality={100}
+        />
+      ) : (
+        children
+      )}
+      {icon && (
+        <Image
+          src={`/icons/${icon}.svg`}
+          alt={icon}
+          width={26}
+          height={26}
+          quality={100}
+        />
+      )}
     </button>
   );
 };

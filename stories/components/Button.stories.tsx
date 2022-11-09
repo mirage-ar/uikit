@@ -14,12 +14,34 @@ const Template: ComponentStory<typeof Button> = (args) => (
 
 export const Primary = Template.bind({});
 Primary.args = {
-  primary: true,
   children: "CONNECT WALLET",
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-  primary: false,
-  children: 'CONNECT WALLET',
-};
+  children: "CONNECT WALLET",
+  secondary: true
+}
+
+export const Small = Template.bind({});
+Small.args = {
+  children: "CONNECT WALLET",
+  small: true,
+}
+
+export const Loading = Template.bind({});
+Loading.args = {
+  loading: true
+}
+
+export const Disabled = Template.bind({});
+Disabled.args = {
+  children: "CONNECT WALLET",
+  disabled: true
+}
+
+export const Icon = Template.bind({});
+Icon.args = {
+  children: "CONNECT WALLET",
+  icon: "metamask"
+}
