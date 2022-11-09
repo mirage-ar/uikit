@@ -33,7 +33,7 @@ a {
 @font-face {
   font-family: "Helvetica-Monospaced";
   /* TODO: storybook needs public, next does not*/
-  src: url("/public/fonts/Helvetica/Helvetica-Monospaced.otf");
+  src: url("/fonts/Helvetica/Helvetica-Monospaced.otf");
   font-style: normal;
   font-weight: 400;
   font-display: swap;

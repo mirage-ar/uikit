@@ -10,7 +10,7 @@ const Home: React.FC = () => {
     <div>
       <h1>NEXT COMPONENT TESTING PAGE</h1>
 
-      <Button onClick={updateTheme}>Console Log</Button>
+      <Button primary loading onClick={updateTheme}>Console Log</Button>
     </div>
   );
 };
