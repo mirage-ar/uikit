@@ -46,8 +46,8 @@ const Button: React.FC<ButtonProps> = ({
         <Image
           src="/gifs/spinner.gif"
           alt="A loading gif"
-          width={26}
-          height={26}
+          width={24}
+          height={24}
           quality={100}
         />
       ) : (
@@ -57,8 +57,8 @@ const Button: React.FC<ButtonProps> = ({
         <Image
           src={`/icons/${icon}.svg`}
           alt={icon}
-          width={26}
-          height={26}
+          width={24}
+          height={24}
           quality={100}
         />
       )}
