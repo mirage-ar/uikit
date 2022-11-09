@@ -11,6 +11,7 @@ export default {
       control: {
         type: "select",
         options: [
+          "",
           "360-arrow",
           "claim",
           "download",
