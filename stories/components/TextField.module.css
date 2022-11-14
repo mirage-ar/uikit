@@ -1,0 +1,30 @@
+.text__field {
+    width: 433px;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--mono);
+    border-bottom: solid 1px #FFFFFF;
+    color: grey;
+    font-size: 13px;
+}
+
+.--error {
+    border-bottom: red 1px solid;
+}
+
+.--error__text {
+    color: red;
+    font-family: var(--mono);
+    font-size: 13px;
+    padding-top: 8px;
+}
+
+.--input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
