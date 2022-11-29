@@ -1,5 +1,5 @@
 /**----------------------------------------------------------------------------------
- * The one stop shop for button needs baby
+ * textfield for giving us info we can sell to big business
  * Mirage UI Kit (( v1.0 ))
  * @author max <max@mirage.space> | November 3, 2022 | Updated: November 9, 2022
  * ----------------------------------------------------------------------------------*/
@@ -10,11 +10,12 @@ import Image from "next/image";
 import styles from "./TextField.module.css";
 
 interface TextFieldProps {
-  error: boolean;
-  placeholder: string;
+  error?: boolean;
+  placeholder?: string;
+  errorMessage?: string;
 }
 
-const TextField: React.FC<TextFieldProps> = ({ error = false, placeholder }) => {
+const TextField: React.FC<TextFieldProps> = ({ error = false, placeholder, errorMessage }) => {
   const textFieldClass = [
     styles.text__field,
     error ? styles["--error"] : "",
@@ -36,7 +37,7 @@ const TextField: React.FC<TextFieldProps> = ({ error = false, placeholder }) => 
             />
           </div>
           <div className={styles["--error__text"]}>
-            Enter your twitter username
+            {errorMessage}
           </div>
         </div>
       ) : (

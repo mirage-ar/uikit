@@ -21,6 +21,7 @@ Primary.args = {
 };
 
 export const Error = Template.bind({});
-Primary.args = {
+Error.args = {
     error: true,
+    errorMessage: "Please enter a username" 
 };

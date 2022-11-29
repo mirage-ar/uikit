@@ -1,0 +1,31 @@
+.accordion {
+    width: 637px;
+    height: 48px;
+    border-top: grey 1px solid;
+    overflow: hidden;
+    transition: height ease 0s;
+}
+
+.--title {
+    font-family: var(--mono);
+    font-size: 13px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.--button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.--content {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    font-family: var(--mono);
+    font-size: 13px;
+}
