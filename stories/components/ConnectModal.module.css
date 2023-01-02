@@ -1,0 +1,28 @@
+.modal{
+    width: 578px;
+    height: 246px;
+    background-color: white;
+}
+
+.--title {
+    color: black;
+    border-bottom: .5px solid;
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+    height: 47px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--mono);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.--content{
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding-left: 10px;
+}

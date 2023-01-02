@@ -1,7 +1,6 @@
 .button {
   border-radius: 30px;
-  padding: 15px, 20px;
-  gap: 10px;
+  padding: 15px 20px;
   border: none;
   display: flex;
   flex-direction: row;
@@ -11,7 +10,7 @@
 }
 
 .--large {
-  width: 153px;
+  width: 187px;
   height: 45px;
   font-size: 13px;
 }
@@ -29,6 +28,7 @@
 
 .--primary:hover {
   background-color: var(--green);
+  cursor: pointer;
 }
 
 .--secondary {
@@ -41,6 +41,7 @@
   background-color: transparent;
   color: var(--green);
   border: 1.5px solid var(--green);
+  cursor: pointer;
 }
 
 .--loading {
@@ -64,7 +65,7 @@
 
 .--with__icon {
   width: 187px;
-  padding: 11px, 20px, 10px;
+  padding: 11px 20px 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -74,12 +75,13 @@
 .--with__icon img {
   width: 24px;
   height: 24px;
+  margin-left: 9px;
 }
 
 .--with__icon__small {
   width: 158px;
   height: 32px;
-  padding: 8px, 20px;
+  padding: 8px 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -89,4 +91,26 @@
 .--with__icon__small img {
   width: 16px;
   height: 16px;
+}
+
+.--black {
+  background-color: black;
+  color: white;
+}
+
+.--green {
+  background-color: #42FF60;
+  color: black;
+}
+
+.--secondary_green{
+  background: transparent;
+  color: #42FF60;
+  border-color: #42FF60;
+}
+
+.--secondary_black{
+  background: transparent;
+  color: black;
+  border-color: black;
 }

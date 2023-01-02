@@ -16,7 +16,8 @@ interface ButtonProps {
   small? : boolean;
   children: string;
   icon?: string;
-  onClick: () => void;
+  color?: string;
+  onClick?: any;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -24,6 +25,7 @@ const Button: React.FC<ButtonProps> = ({
   small = false,
   loading = false,
   disabled = false,
+  color = "white",
   icon,
   children,
   onClick,
@@ -38,6 +40,10 @@ const Button: React.FC<ButtonProps> = ({
     loading && small && styles["--small__loader"],
     icon && small && styles["--with__icon__small"],
     icon && styles["--with__icon"],
+    color === "black" && styles["--black"],
+    color === "green" && styles["--green"],
+    secondary && color === "green" && styles["--secondary_green"],
+    secondary && color === "black" && styles["--secondary_black"]
   ].join(" ");
 
   return (

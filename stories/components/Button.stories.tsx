@@ -76,33 +76,53 @@ const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 export const Primary = Template.bind({});
 Primary.args = {
   children: "CONNECT WALLET",
+  disabled: false,
+  secondary: false,
+  loading: false,
+  small: false,
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
   children: "CONNECT WALLET",
   secondary: true,
+  disabled: false,
+  loading: false,
+  small: false,
 };
 
 export const Small = Template.bind({});
 Small.args = {
   children: "CONNECT WALLET",
   small: true,
+  disabled: false,
+  secondary: false,
+  loading: false,
 };
 
 export const Loading = Template.bind({});
 Loading.args = {
   loading: true,
+  disabled: false,
+  secondary: false,
+  small: false,
 };
 
 export const Disabled = Template.bind({});
 Disabled.args = {
   children: "CONNECT WALLET",
   disabled: true,
+  secondary: false,
+  loading: false,
+  small: false,
 };
 
 export const Icon = Template.bind({});
 Icon.args = {
   children: "CONNECT WALLET",
   icon: "metamask",
+  disabled: false,
+  secondary: false,
+  loading: false,
+  small: false,
 };
