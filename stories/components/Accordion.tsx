@@ -1,5 +1,5 @@
 /**----------------------------------------------------------------------------------
- * Accordion Component
+ * Accordion fold component
  * Mirage UI Kit (( v1.0 ))
  * @author max <max@mirage.space> | November 29, 2022 | Updated: nevah
  * ----------------------------------------------------------------------------------*/
