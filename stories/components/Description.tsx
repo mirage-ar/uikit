@@ -1,5 +1,5 @@
 /**----------------------------------------------------------------------------------
- * Description comp for the piece displays
+ * Description component for the piece displays
  * Mirage UI Kit (( v1.0 ))
  * @author max <max@mirage.space> | November 29, 2022 | Updated: nevah
  * ----------------------------------------------------------------------------------*/
