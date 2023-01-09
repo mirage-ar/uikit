@@ -19,5 +19,5 @@ const Template: ComponentStory<typeof Accordion> = (args) => (
 export const Primary = Template.bind({});
 Primary.args = {
     title: "How can I mint my first nft?",
-    content: "I got in trouble so now this message is boring thank my boss",
+    content: "Minting your first NFT is as simple as clicking the mint button!",
 };
