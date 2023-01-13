@@ -50,7 +50,7 @@ export default {
           "navigate",
           "radio-on",
           "sound-on",
-          "х",
+          "x",
           "bell",
           "copy",
           "fullscreen",
