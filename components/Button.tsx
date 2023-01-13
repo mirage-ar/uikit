@@ -1,5 +1,5 @@
 /**----------------------------------------------------------------------------------
- * The one stop shop for button needs baby
+ * A button component
  * Mirage UI Kit (( v1.0 ))
  * @author max <max@mirage.space> | November 3, 2022 | Updated: November 9, 2022
  * ----------------------------------------------------------------------------------*/
