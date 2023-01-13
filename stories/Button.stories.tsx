@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import Button from "./Button";
+import Button from "../components/Button";
 
 export default {
   title: "Button",
@@ -50,7 +50,7 @@ export default {
           "navigate",
           "radio-on",
           "sound-on",
-          "х",
+          "x",
           "bell",
           "copy",
           "fullscreen",

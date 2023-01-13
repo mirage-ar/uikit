@@ -1,3 +1,8 @@
+/**----------------------------------------------------------------------------------
+ * The connect module component
+ * Mirage UI Kit (( v1.0 ))
+ * @author fiig, max <fiig@mirage.space, max@mirage.space> | January 9, 2023 | Updated: January 9, 2023
+ * ----------------------------------------------------------------------------------*/
 import React from "react";
 import styles from "./ConnectModal.module.css";
 import Image from "next/image";
