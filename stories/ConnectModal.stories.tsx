@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import ConnectModal from "./ConnectModal";
+import ConnectModal from "../components/ConnectModal";
 
 export default {
   title: "Connect Modal",
