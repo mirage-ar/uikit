@@ -2,7 +2,7 @@ import ConnectModal from "../components/ConnectModal";
 import { useAccount, useConnect } from "wagmi";
 import { useState } from "react";
 import { disconnect } from "process";
-import Button from "../components/Button";
+import Button from "../components/Button"
 
 const Home: React.FC = () => {
   const { connect, connectors, error, isLoading } = useConnect();
