@@ -25,11 +25,6 @@ interface WagmiConnector {
   ready: Boolean;
 }
 
-interface ConnectArgs {
-  chainId?: number;
-  connector: WagmiConnector;
-}
-
 // error JSX
 //  {error && <div className={styles.errorMessage}>{error.message}</div>}
 
