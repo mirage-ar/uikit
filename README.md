@@ -37,5 +37,4 @@ Now to install the package to a project follow the listed steps:
 ## Packages
 
 * [Storybook](https://storybook.js.org/ "Storybook")
-* [Wagmi](https://wagmi.sh/ "Wagmi")
 * [Next](https://nextjs.org/ "Next")
