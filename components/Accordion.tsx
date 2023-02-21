@@ -51,6 +51,7 @@ const Accordion: React.FC<AccordionProps> = ({ title, content }) => {
     <div
       className={accordionClass}
       style={isOpen ? { height: "100%" } : { height: "48px" }}
+      data-testid="accordion-test"
     >
       <div className={styles["--title"]}>
         <div>{title}</div>

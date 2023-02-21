@@ -14,10 +14,8 @@ interface RadioProps {
 }
 
 const Radio: React.FC<RadioProps> = ({ title, values }) => {
-  const radioClass = [].join(" ");
-
   return (
-    <div>
+    <div data-testid="radio-test">
       <fieldset className={styles["--fieldset"]}>
         <legend className={styles["--title"]}>{title?.toUpperCase()}</legend>
         {values.map((value, index) => {
