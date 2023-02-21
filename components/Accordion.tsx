@@ -60,7 +60,7 @@ const Accordion: React.FC<AccordionProps> = ({ title, content }) => {
         </button>
       </div>
       <div className={styles["--content"]}>
-        {content}
+        {"break"}
       </div>
     </div>
   );
