@@ -6,7 +6,7 @@ describe('Accordion', () => {
     it('renders an accordion fold', () => {
         render(<Accordion title="test title" content='This is the content'/>);
 
-        const accordionElement = screen.getByTestId('accordion-1');
+        const accordionElement = screen.getByTestId('accordion-test');
 
         expect(accordionElement).toBeInTheDocument();
         expect(accordionElement).toHaveTextContent('test title');

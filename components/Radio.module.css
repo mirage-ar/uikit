@@ -28,7 +28,7 @@
     height: 24px;
 } */
 
-input[type='radio'] {
+.--fieldset [type='radio'] {
     -webkit-appearance:none;
     width:24px;
     height:24px;
@@ -38,7 +38,7 @@ input[type='radio'] {
     box-shadow:0 0 5px 0px gray inset;
   }
   
-  input[type='radio']:before {
+  .--fieldset input[type='radio']:before {
     content:'';
     display:block;
     width:30%;
@@ -47,6 +47,6 @@ input[type='radio'] {
     border-radius:50%;    
   }
 
-  input[type='radio']:checked:before {
+  .--fieldset input[type='radio']:checked:before {
     background: white;
   }
