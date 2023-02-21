@@ -1,7 +1,7 @@
 name: Jest Tests
 on: push
 jobs:
-  tests:
+  test:
     runs-on: ubuntu-latest
 
     strategy:
