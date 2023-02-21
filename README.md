@@ -5,11 +5,11 @@ This is the Mirage UI Kit library. This project is intended to streamline the pr
 - - - - 
 ## To edit the UI Kit
 
-1. Use the command _yarn_ to install all packages and dependencies
+1. Use the command _npm install_ to install all packages and dependencies
 
-2. To open the development server run _yarn dev_. This will open on your localhost branch
+2. To open the development server run _npm run dev_. This will open on your localhost branch
 
-3. This project utilizes [Storybook](https://storybook.js.org/) to open storybook run the command _yarn storybook_
+3. This project utilizes [Storybook](https://storybook.js.org/) to open storybook run the command _npm run storybook_
 
 - - - -
 
