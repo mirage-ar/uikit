@@ -8,6 +8,6 @@ describe('Radio', () => {
 
         const radioElement = screen.getByTestId('radio-test');
 
-        expect(radioElement).toBeInTheDocument();
+        expect(blah).toBeInTheDocument();
     })
 })
