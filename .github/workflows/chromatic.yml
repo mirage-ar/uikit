@@ -8,7 +8,7 @@ on: push
 
 # List of jobs
 jobs:
-  test:
+  chromatic:
     # Operating System
     runs-on: ubuntu-latest
     # Job steps
