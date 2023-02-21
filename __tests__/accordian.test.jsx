@@ -13,6 +13,6 @@ describe('Accordion', () => {
         expect(accordionElement).toHaveTextContent('This is the content');
         
         const button = screen.getByRole('button')
-        expect(blank).toBeInTheDocument
+        expect(button).toBeInTheDocument
     })
 })
