@@ -47,7 +47,7 @@ const Button: React.FC<ButtonProps> = ({
   ].join(" ");
 
   return (
-    <button className={buttonClass} onClick={onClick}>
+    <button className={buttonClass} onClick={onClick} data-testid="button-test">
       {loading ? (
         <Image
           src="/gifs/spinner.gif"

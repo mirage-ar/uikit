@@ -23,7 +23,7 @@ const Description: React.FC<DescriptionProps> = ({ title, content, image }) => {
   return (
     <>
       {image ? (
-        <div className={descriptionClass}>
+        <div className={descriptionClass} data-testid="description-test">
           <div className={styles["--title"]}>
             {title?.toUpperCase()}
             <Image
@@ -38,7 +38,7 @@ const Description: React.FC<DescriptionProps> = ({ title, content, image }) => {
           <div className={styles["--content"]}>{content?.toUpperCase()}</div>
         </div>
       ) : (
-        <div className={descriptionClass}>
+        <div className={descriptionClass} data-testid="description-test">
           <div className={styles["--title"]}>{title?.toUpperCase()}</div>
           <div className={styles["--content"]}>{content?.toUpperCase()}</div>
         </div>
