@@ -25,16 +25,18 @@ const TextField: React.FC<TextFieldProps> = ({
   ].join(" ");
 
   return (
-    <div>
+    <div data-testid="text-test">
       <div className={textFieldClass}>
         <input className={styles["--input"]} placeholder={placeholder}></input>
-        <Image
-          src="/icons/navigate.svg"
-          alt="A navigate icon"
-          width={24}
-          height={24}
-          quality={100}
-        />
+        <button className={styles["--button"]}>
+          <Image
+            src="/icons/navigate.svg"
+            alt="A navigate icon"
+            width={24}
+            height={24}
+            quality={100}
+          />
+        </button>
       </div>
       {error && <div className={styles["--error__text"]}>{errorMessage}</div>}
     </div>

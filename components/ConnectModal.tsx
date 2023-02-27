@@ -76,6 +76,7 @@ const ConnectModal: React.FC<ConnectModalProps> = ({
           ref={outsideRef}
           className={styles.modalOverlay}
           onClick={handleCloseOnOverlay}
+          data-testid="modal-test"
         />
         <div className={connectModalClass}>
           <div className={styles["--title"]}>
